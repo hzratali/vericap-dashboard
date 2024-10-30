@@ -1,70 +1,91 @@
-# Getting Started with Create React App
+# User Dashboard Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple, responsive, React-based User Dashboard that displays and updates user information, retrieves data from an API, and allows searching through the user list. This project is designed with a clean layout, mobile responsiveness, and a component-based architecture.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Structure](#file-structure)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dashboard Layout**:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - Navigation bar
+  - Sidebar with navigation options (Dashboard, Profile, Settings)
+  - Main content area for user data display
 
-### `npm test`
+- **Profile Section**:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  - Displays user information (e.g., name, email)
+  - Provides an update form to modify name and email, using React state management
 
-### `npm run build`
+- **Data Fetching and Display**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Fetches user data from a public API
+  - Displays data in a responsive table
+  - Provides a search bar to filter user data
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Responsive Design**:
+  - Optimized for both desktop and mobile views
+  - Sidebar repositions below the navbar in mobile view
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **Frontend**: React.js, CSS
+- **Libraries**: Axios for data fetching, React Router for navigation
+- **API**: JSONPlaceholder (https://jsonplaceholder.typicode.com/users) for sample user data
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/hzratali/vericap-dashboard.git
+   ```
+2. **Navigate to the project directory**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   cd user-dashboard
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Start the application**:
+   ```bash
+   npm start
+   ```
+2. Open [http://localhost:3000](http://localhost:3000) to view the app in your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## File Structure
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```plaintext
+user-dashboard/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Dashboard.css
+│   │   ├── Dashboard.js
+│   │   ├── Navbar.css
+│   │   ├── Navbar.js
+│   │   ├── Profile.css
+│   │   ├── Profile.js
+│   │   ├── Sidebar.css
+│   │   ├── Sidebar.js
+│   │   ├── Settings.css
+│   │   ├── Settings.js
+│   │   └── UserTable.js
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+├── README.md
+├── package.json
+└── .gitignore
+```

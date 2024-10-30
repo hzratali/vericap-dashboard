@@ -1,0 +1,44 @@
+.dashboard {
+    margin: 20px;
+}
+
+.search-bar {
+    padding: 8px;
+    margin-bottom: 20px;
+    width: 100%;
+    width: 300px;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.user-table th {
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        width: 100%;
+    }
+
+    .user-table {
+        display: block;
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .user-table th,
+    .user-table td {
+        padding: 6px;
+        font-size: 14px;
+    }
+}
